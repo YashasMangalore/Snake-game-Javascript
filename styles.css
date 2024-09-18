@@ -1,0 +1,54 @@
+body {
+    background-color: #181818;
+    color: #fff;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Use full viewport height */
+    /* margin: 0; Remove default body margin */
+}
+
+#score-board {
+    display: flex; /* Use flexbox to align items in a row */
+    justify-content: center; /* Center items horizontally */
+    margin-bottom: 20px;
+}
+
+#score {
+    margin-right: 50px; /* Add space between Score and HighScore */
+}
+
+#score h2, 
+#high-score h2 {
+    margin: 0; /* Remove default margin from h2 */
+}
+
+#game-board {
+    position: relative;
+    height: 400px;
+    width: 400px;
+    border: 1px solid #fff;
+    background-color: #282828; /* Optional: To make it clearer */
+}
+
+.snake {
+    width: 20px;
+    height: 20px;
+    background-color: darkgreen;
+    position: absolute;
+    top: 0; /* Consider adding 'px' for clarity */
+    left: 0; /* Consider adding 'px' for clarity */
+}
+
+.snake.head {
+    background-color: lime;
+}
+
+.food {
+    background-color: red;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+}
